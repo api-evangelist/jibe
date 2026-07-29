@@ -1,8 +1,23 @@
 aid: jibe
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jibe.png
 name: Jibe
-description: 'Jibe is a company surfaced as a portfolio company of sapphire-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: hr-tech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Jibe was an HR-tech / talent-acquisition and recruitment-marketing SaaS company, surfaced
+  as a portfolio company of sapphire-ventures and added to the API Evangelist network as a stub for
+  enrichment. As of this enrichment pass the company no longer operates independently: its domain
+  www.jibe.com issues a blanket HTTP 301 redirect to www.icims.com (Jibe was acquired by iCIMS), and no
+  independent Jibe developer portal, API, OpenAPI, or .well-known surface exists to harvest. No API
+  artifacts could be enriched without fabrication.'
 url: https://raw.githubusercontent.com/api-evangelist/jibe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +25,21 @@ x-backed-by:
 - sapphire-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: icims
+x-enrichment-note: 'www.jibe.com 301-redirects to www.icims.com as of 2026-07-20; api.jibe.com resolves
+  but returns an empty openresty 200 (content-length 0) and 404s on every well-known/OpenAPI/docs path;
+  no independent Jibe API/portal/well-known surface. No artifacts enriched (no fabrication).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Hr Tech
+- Talent Acquisition
+- Recruiting
+- Recruitment Marketing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,8 @@ maintainers:
 common:
 - type: Website
   url: https://www.jibe.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
