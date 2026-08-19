@@ -30,7 +30,7 @@ x-acquired-by: icims
 x-enrichment-note: 'www.jibe.com 301-redirects to www.icims.com as of 2026-07-20; api.jibe.com resolves
   but returns an empty openresty 200 (content-length 0) and 404s on every well-known/OpenAPI/docs path;
   no independent Jibe API/portal/well-known surface. No artifacts enriched (no fabrication).'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
